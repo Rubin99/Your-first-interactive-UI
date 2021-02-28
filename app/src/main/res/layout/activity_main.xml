@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:backgroundTint ="@color/purple_500"
+        android:onClick="showToast"
+        android:text="@string/button_label_toast"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/button_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_zero"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint ="@color/purple_500"
+        android:onClick="countUp"
+        android:padding="8dp"
+        android:text="@string/button_label_count"
+        android:textColor="@color/white"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/show_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#FFFF00"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/count_initial_value"
+        android:textColor="@color/purple_500"
+        android:textIsSelectable="false"
+        android:textSize="160sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/button_toast"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@+id/button_toast"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/button_zero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_toast"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint ="@color/gray"
+        android:onClick="zero"
+        android:padding="8dp"
+        android:text="@string/button_label_zero"
+        android:textColor="@color/white"
+        app:backgroundTint="#8E8E8E"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
