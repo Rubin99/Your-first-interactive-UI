@@ -1,1 +1,2 @@
-![Hello Toast Screenshot](./HelloToast.png =500x1000)
+## Hello Toast
+<img src="./HelloToast.png" alt="hello toast" width="500" height="1000"/>
